@@ -1,0 +1,59 @@
+.logo {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-width: 0;
+  color: var(--text-main, #edf5f8);
+  text-decoration: none;
+  line-height: 1;
+}
+
+.icon {
+  display: block;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+}
+
+.wordmark {
+  display: inline-flex;
+  align-items: baseline;
+  position: relative;
+  color: var(--text-main, #edf5f8);
+  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-size: clamp(17px, 1.35vw, 21px);
+  font-weight: 750;
+  letter-spacing: -0.8px;
+  white-space: nowrap;
+}
+
+.accent {
+  color: #2ec4b6;
+}
+
+.tagline {
+  display: block;
+  position: absolute;
+  top: calc(100% + 5px);
+  left: 0;
+  color: var(--text-muted, #93aab8);
+  font-size: 8px;
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.iconOnly .icon {
+  width: 40px;
+  height: 40px;
+}
+
+@media (max-width: 620px) {
+  .logo {
+    gap: 6px;
+  }
+
+  .icon {
+    width: 33px;
+    height: 33px;
+  }
+}
